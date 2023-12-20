@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>י"א ניסן ה'תשפ"ד</title>
+    <style>
+      body {
+        background: linear-gradient(to right, #1b4783 0%, #009ae7 30%, #009ae7 60%, #1b4783 100%);
+        background-size: cover;
+        font-size: 64px;
+        font-family: "Digital-7", Monaco, monospace;
+        text-align: center;
+        margin-top: 50px;
+      }
+      #countdown {
+        border: 2px solid #fff;
+        padding: 20px;
+        color: white;
+        border-radius: 10px;
+        display: inline-block;
+        position: relative; /* Added position */
+      }
+      #countdown span {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        font-size: 85px;
+        font-family: "Digital-7", Monaco, monospace; /* Added font family */
+      }
+      /* Added CSS for the labels */
+      #countdown span:after {
+        content: attr(data-label);
+        display: block;
+        font-size: 30px;
+        margin-top: 0px;
+      }
+      #header {
+        font-size: 64px;
+        color: white;
+        margin-top: 50px;
+        font-family: "FbTehila", david;
+      }
+      #subheader {
+        font-size: 64px;
+        color: white;
+        font-family: "FbTehila", david;
+      }
+    </style>
+    <script>
+
+      // Set the date we're counting down to in ET
+      var countDownDate = new Date("April 18, 2024 19:39:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+
+        // Get the current time in ET
+        var now = new Date().toLocaleString("en-US", {timeZone: "America/New_York"});
+        var currentTime = new Date(now).getTime();
+
+        // Calculate the time remaining
+        var timeRemaining = countDownDate - currentTime;
+
+        // Calculate days, hours, minutes, and seconds remaining
+        var days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+        // Display the countdown
+        document.getElementById("countdown").innerHTML =
+          '<span data-label="Days">' + days + '</span>' +
+          '<span data-label="Hours">' + hours + '</span>' +
+          '<span data-label="Minutes">' + minutes + '</span>' +
+          '<span data-label="Seconds">' + seconds + '</span>';
+
+        // If the countdown is over, display a message
+        if (timeRemaining < 0) {
+          clearInterval(x);
+          document.getElementById("countdown").innerHTML = "י״א ניסן ה׳תשפ״ד";
+        }
+      }, 1000);
+    </script>
+  </head>
+  <body>
+    <div id="header">תמים, עוד</div>
+    <div id="countdown">
+      <span>0</span><span>0</span><span>0</span><span>0</span>
+    </div>
+    <div id="subheader">י"א ניסן ה'תשפ"ד</div>
+  </body>
+</html>
