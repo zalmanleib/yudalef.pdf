@@ -1,0 +1,16 @@
+{
+  "name": "Your Web App Name",
+  "short_name": "Short Name",
+  "description": "Your web app description",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1b4783",
+  "theme_color": "#009ae7",
+  "icons": [
+    {
+      "src": "icon.png",  // Add your icon file (e.g., icon.png)
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
