@@ -2,7 +2,7 @@
   "name": "Your Web App Name",
   "short_name": "Short Name",
   "description": "Your web app description",
-  "start_url": "/",
+  "start_url": "/index",
   "display": "standalone",
   "background_color": "#1b4783",
   "theme_color": "#009ae7",
