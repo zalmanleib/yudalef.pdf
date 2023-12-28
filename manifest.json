@@ -2,13 +2,13 @@
   "name": "Yud alef Nissan",
   "short_name": "countdown",
   "description": "countdown till Yud alef nissan",
-  "start_url": "/index",
+  "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#000",
   "theme_color": "#000",
   "icons": [
     {
-      "src": "icon.png",  // Add your icon file (e.g., icon.png)
+      "src": "icon.png",
       "sizes": "192x192",
       "type": "image/png"
     }
