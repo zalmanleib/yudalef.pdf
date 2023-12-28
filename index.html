@@ -2,6 +2,10 @@
 <html lang="he">
   <head>
     <title>י"א ניסן ה'תשפ"ד</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json"> <!-- Link to the manifest file -->
+
     <style>
       body {
         background: linear-gradient(to right, #1b4783 0%, #009ae7 30%, #009ae7 60%, #1b4783 100%);
@@ -28,6 +32,7 @@
         border-radius: 5px;
         font-size: 85px;
         font-family: "Suez One", Monaco, monospace; /* Added font family */
+        direction: rtl; /* Set the direction to right-to-left for individual spans */
       }
       /* Added CSS for the labels */
       #countdown span:after {
@@ -48,14 +53,13 @@
         font-family: "Suez One", david;
       }
     </style>
-    <script>
 
+    <script>
       // Set the date we're counting down to in ET
       var countDownDate = new Date("April 18, 2024 19:39:00").getTime();
 
       // Update the count down every 1 second
       var x = setInterval(function() {
-
         // Get the current time in ET
         var now = new Date().toLocaleString("en-US", {timeZone: "America/New_York"});
         var currentTime = new Date(now).getTime();
