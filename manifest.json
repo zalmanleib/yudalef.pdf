@@ -2,7 +2,7 @@
   "name": "Yud alef Nissan",
   "short_name": "countdown",
   "description": "countdown till Yud alef nissan",
-  "start_url": "/index.html",
+  "start_url": "https://zalmanleib.github.io/yudalef/",
   "display": "standalone",
   "background_color": "#000",
   "theme_color": "#000",
