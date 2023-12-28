@@ -1,11 +1,11 @@
 {
-  "name": "Your Web App Name",
-  "short_name": "Short Name",
-  "description": "Your web app description",
+  "name": "Yud alef Nissan",
+  "short_name": "countdown",
+  "description": "countdown till Yud alef nissan",
   "start_url": "/index",
   "display": "standalone",
-  "background_color": "#1b4783",
-  "theme_color": "#009ae7",
+  "background_color": "#000",
+  "theme_color": "#000",
   "icons": [
     {
       "src": "icon.png",  // Add your icon file (e.g., icon.png)
