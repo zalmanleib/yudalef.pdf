@@ -1,14 +1,14 @@
 {
-  "name": "Yud alef Nissan",
+  "name": "Yud Alef Nissan",
   "short_name": "countdown",
-  "description": "countdown till Yud alef nissan",
+  "description": "Countdown till Yud Alef Nissan",
   "start_url": "https://zalmanleib.github.io/yudalef.pdf/",
   "display": "standalone",
   "background_color": "#000",
   "theme_color": "#000",
   "icons": [
     {
-      "src": "icon.png",
+      "src": "icon.png",  // Adjust if in a subfolder
       "sizes": "192x192",
       "type": "image/png"
     }
